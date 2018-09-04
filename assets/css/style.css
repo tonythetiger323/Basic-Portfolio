@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
     background-image: url(../images/dust_scratches.png)
 }
@@ -6,57 +55,131 @@ a:link {
     text-decoration: none;
 }
 
-nav {
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    padding-right: 10%;
-    text-align: right;
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 15px;
+a:visted {
     color: #777;
+}
+
+nav {
+    width: 100%;
     background-color: #FFF;
+    border-bottom: 5px solid #CCC;
+    margin-bottom: 40px;
+}
+
+.insideRow {
+    width: 960px;
+    margin: 0 auto;
 }
 
 #myName {
-    padding: 1.7%;
-    margin-top: 0;
-    margin-left: 10%;
-    margin-bottom: 0;
     float: left;
-    text-align: center;
-    font-family: "Georgia", Times, Times New Roman, serif;
-    color: #FFF;
     background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFF;
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
 }
 
-img.me {
-    margin: 1.5%;
-    float: left;
-    width: 30%;
+.navLinks {
+    float: right;
+    color: #777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.clearFix {
+    clear: both;
 }
 
 .bio {
-    height: 200%;
-    margin: 5% 10%;
-    background-color: #FFF;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff; 
+  
 }
 
-#about {
-    margin: 0;
-    padding: 20px;
-    border-bottom: 1px solid lightgray;
+.about {
+    float: left;
     color: #4aaaa5;
+    font-size: 25px;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.me {
+    float: left;
+    padding: 25px;
+}
+
+.paragraphs {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px;
 }
 
 footer {
-    clear: both;
-    text-align: center;
     background-color: #666;
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
     color: #FFF;
+    border-top: 10px solid #4aaaa5;
+    padding-top: 56px;
+    margin-top: 40px;
 }
 
-#nav {
-    margin-right: 11%;
+.projBox {
+    width: 200px;
+    height: 125;
+    position: relative;
 }
 
+.projBox img {
+    width: 200px;
+    height: 125px;
+}
+
+.projBox p {
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 15px;
+    Left: 0;
+    right: 0;
+}
+
+.projBoxContainer {
+    padding: 30px 25px;
+}
+.bio .projBoxContainer {
+    display: inline-block;
+}
+
+form {
+    padding: 25px;
+}
+input[type=text] {
+    width: 100%;
+}
+
+input[type=email] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 157px;
+}
+
+label {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    font-size: 16px;
+    line-height: 24px;
+}
