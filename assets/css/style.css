@@ -55,7 +55,7 @@ a:link {
     text-decoration: none;
 }
 
-a:link a:visted a:active {
+nav a {
     color: #777;
 }
 
