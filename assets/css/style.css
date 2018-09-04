@@ -192,5 +192,9 @@ input[type=submit] {
     font-size: 16px;
     padding: 10px 25px;
     margin-top: 5px;
+}
 
+hr {
+    width: 95%;
+    border-color: #777;
 }
