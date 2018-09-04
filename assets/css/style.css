@@ -60,10 +60,11 @@ nav a {
 }
 
 nav {
+    position: fixed;
+    top: 0;
     width: 100%;
     background-color: #FFF;
     border-bottom: 5px solid #CCC;
-    margin-bottom: 40px;
 }
 
 .insideRow {
@@ -94,8 +95,10 @@ nav {
 }
 
 .bio {
+    position: relative;
+    top: 150px;
     width: 960px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #fff; 
   
 }
@@ -122,6 +125,9 @@ nav {
 }
 
 footer {
+    position: fixed;
+    width: 100%;
+    Bottom: 0;
     background-color: #666;
     text-align: center;
     color: #FFF;
