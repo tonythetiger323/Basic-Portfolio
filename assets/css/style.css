@@ -95,8 +95,9 @@ nav {
 }
 
 .bio {
-    position: relative;
-    top: 150px;
+    position: fixed;
+    top: 100px;
+    left: 160px;
     width: 960px;
     margin: auto;
     background-color: #fff; 
